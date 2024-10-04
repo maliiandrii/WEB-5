@@ -81,7 +81,6 @@ body {
     height: calc(100% - 245px);
     background-color: #F8F7FF;
     position: relative;
-    text-align: center;
 }
 
 .block4 p {
