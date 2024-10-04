@@ -105,6 +105,8 @@ body {
     bottom: 10px;
     right: 20px;
     text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 img {
