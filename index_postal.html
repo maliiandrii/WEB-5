@@ -4,10 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layout Example</title>
-  <link rel="stylesheet" href="style_flex.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Sofadi One, sans-serif;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .block {
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .block1 {
+      width: 100%;
+      height: 110px;
+      background-color: #9381FF;
+      position: relative;
+    }
+
+    .block1 h1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: left;
+    }
+
+    .block2 {
+      float: left;
+      width: 20%;
+      background-color: #B8B8FF;
+      height: calc(100% - 180px);
+      position: relative;
+    }
+
+    .block_1 {
+      position: absolute;
+      bottom: 90px;
+      left: 0;
+      width: 20%;
+      height: calc(100% - 390px);
+      background-color: #B8B8FF;
+    }
+
+    .block3 {
+      float: right;
+      width: 80%;
+      height: 155px;
+      background-color: #FFEEDD;
+    }
+
+    .block5 {
+      float: right;
+      width: 20%;
+      height: calc(100% - 245px);
+      background-color: #FFD8BE;
+      position: relative;
+    }
+
+    .block_2 {
+      position: absolute;
+      bottom: 90px;
+      right: 0;
+      width: 20%;
+      height: calc(100% - 540px);
+      background-color: #FFD8BE;
+    }
+
+    .block4 {
+      float: left;
+      width: 60%;
+      height: calc(100% - 245px);
+      background-color: #F8F7FF;
+      position: relative;
+    }
+
+    .block4 p {
+      margin-top: 10px;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    .block6 {
+      clear: both;
+      width: 100%;
+      height: 110px;
+      background-color: #9381FF;
+      position: relative;
+    }
+
+    .block6 h1 {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      text-align: right;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
@@ -30,7 +145,7 @@
   <div class="block block3">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate leo aliquam ligula commodo, non rutrum metus auctor. Sed quis blandit ante. Ut aliquam quam malesuada libero egestas scelerisque. Phasellus nulla quam, viverra et auctor consectetur, semper eu orci. Vivamus sit amet nisi feugiat, volutpat eros at, tristique urna. Vestibulum sed nisl sit amet diam luctus molestie. Cras malesuada dolor sed mi scelerisque gravida.</p>
   </div>
-  <div class="block block_">
+  <div class="block block_1">
   </div>
   <div class="block block4">
     <p>Integer hendrerit arcu nisi, aliquam scelerisque sem laoreet id. In consequat ipsum vel tortor ullamcorper, nec aliquam erat pellentesque. Duis metus purus, dictum ac dictum sit amet, luctus id nunc. Suspendisse eu nibh eu nibh fermentum fermentum id ut lacus. Etiam tincidunt justo id pellentesque gravida. Aliquam venenatis ultrices arcu nec fringilla. In eros sem, condimentum ac volutpat tempor, gravida eu lacus. In eget arcu sit amet justo posuere cursus eu eget leo. Donec tempus, turpis sit amet facilisis volutpat, augue arcu convallis nunc, eget tempor neque velit eget metus. Phasellus mollis eros eget nibh efficitur, ac dignissim mauris varius. Nam sodales ipsum risus, vel iaculis est dignissim a. Sed eu purus consectetur, consectetur sapien ut, semper arcu.</p>
@@ -48,6 +163,9 @@
   </div>
   <div class="block block5">
     <p>Suspendisse porttitor porttitor turpis at vulputate. Sed elementum sit amet nisi sed commodo. Fusce fermentum feugiat venenatis. In non feugiat tellus. Proin consequat a enim a interdum. Nulla sollicitudin dolor nisi. Vestibulum posuere auctor bibendum. Ut quis cursus nunc, eget semper neque. Nullam eu libero id urna placerat lacinia.</p>
+  </div>
+  <div class="block_2">
+
   </div>
   <div class="block block6">
     <h1>Not even if the word were turned upside down</h1>
